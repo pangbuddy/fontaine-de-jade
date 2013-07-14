@@ -1,0 +1,9 @@
+WARNING=DO NOT MODIFY THIS FILE IF YOU DON'T UNDERSTAND
+defaultDestination=D\:/MyPrograms/apache-tomcat-7.0.39/webapps/fdj
+defaultVariables=
+eclipse.preferences.version=1
+includeTeamPrivateFiles=false
+map|0=src/main/webapp|,|,|,|,
+map|1=target/fontaine-de-jade-0.0.1-SNAPSHOT/WEB-INF/lib|D\:/MyPrograms/apache-tomcat-7.0.39/webapps/fdj/WEB-INF/lib|,|,|,
+map|2=target/classes|D\:/MyPrograms/apache-tomcat-7.0.39/webapps/fdj/WEB-INF/classes|,|,|,
+useCurrentDateForDestinationFiles=false

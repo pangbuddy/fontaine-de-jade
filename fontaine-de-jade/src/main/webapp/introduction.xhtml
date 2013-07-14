@@ -1,0 +1,49 @@
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:ui="http://java.sun.com/jsf/facelets"
+	 xmlns:h="http://java.sun.com/jsf/html"
+     xmlns:f="http://java.sun.com/jsf/core"
+     xmlns:p="http://primefaces.org/ui">
+<ui:composition template="template/classic.xhtml">
+<ui:param name="contentBodyStyleClass" value="content-body-bg-color" />
+<ui:define name="title">#{msg['page.introduction']}</ui:define>
+<ui:define name="header_content"><ui:include src="layout/headerContent.xhtml"/></ui:define>
+<ui:define name="main_body">
+<div id="main-content-body">
+
+<h:graphicImage value="#{resource['image:page/fdj_03.jpg']}" style="float:left; margin-right:20px"/>
+<p class="text-content">
+Situé à deux pas du Parc du Cinquantenaire, sur la prestigieuse avenue de Tervueren, le restaurant « la fontaine de jade » est synonyme de calme et de sérénité.
+<br />
+En y entrant vous serez accueilli par des hôtesses chinoises des plus gentilles dans un cadre agréable.
+<br />
+Une nouvelle équipe jeune et dynamique a, depuis 2008, pris la relève et vous servira avec classe.
+<br />
+Vous pourrez y déguster tout un ensemble de mets aux saveurs des plus riches et de qualité, soit pour les déjeuners, le buffet aux variétés de saveurs exceptionnelles et cela pour un prix modique, soit pour les dîners et les déjeuners à la carte particulièrement enrichie par le cuisiner en chef Monsieur Yong qui a reçu de la presse locale le prix du meilleur restaurant ex-européen.
+<br />
+Vous serez ravis par la gamme des saveurs si spécifiques des menus chinois et expérimenterez une aventure culinaire de choix qui vous laissera un souvenir de valeur et cela pour des prix fort démocratiques. Une expérience à la fontaine de jade laisse un souvenir impérissable.
+</p>
+<br />
+<br />
+<br />
+<h:graphicImage value="#{resource['image:page/fdj_1413.jpg']}" style="float:right; margin-left:20px"/>
+<strong>Au menu</strong><br />
+<p class="text-content">
+Canard, boeuf, poulet, fruits de mer,... Tous ces produits frais sont ici la base de la carte généreusement fournie de mets aux accents typiques. Caille braisée aux cinq parfums, trois délices de mer aux asperges vertes, languettes d'agneau sautées aux tiges d'oignons frais, poulet croquant sauce Sichuan... Autant de plats qui émerveillent déjà l'esprit et bientôt vos papilles.
+</p>
+<br />
+<br />
+<br />
+<h:graphicImage value="#{resource['image:page/fdj_1442.jpg']}" style="float:left; margin-right:20px"/>
+<strong>Différentes formules proposées</strong>
+<br />
+<p class="text-content">
+Tous les midis, le lunch façon « Fontaine de Jade » vous attend sous forme de buffet. Découvrez également le menu « Fontaine de Jade », le menu « Dégustation », ou encore le menu « Gourmet », et à partir de 10 personnes, le menu « Banquet ». Sachez également que tous les plats de la carte sont également disponibles « à emporter ». La Fontaine de Jade est une adresse culinaire à découvrir ou à redécouvrir. Laissez-vous emporter...
+</p>
+<br />
+<h:graphicImage value="#{resource['image:page/fdj_1366.jpg']}" style="float:right; margin-right:50px"/>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+</div>
+</ui:define>		
+</ui:composition>
+</div>

@@ -1,0 +1,32 @@
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:ui="http://java.sun.com/jsf/facelets"
+	 xmlns:h="http://java.sun.com/jsf/html"
+     xmlns:f="http://java.sun.com/jsf/core"
+     xmlns:p="http://primefaces.org/ui">
+<ui:composition template="template/classic.xhtml">
+<ui:param name="contentBodyStyleClass" value="content-body-bg-color" />
+<ui:define name="title">#{msg['page.contact']}</ui:define>
+<ui:define name="custom-script">
+	<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+</ui:define>
+<ui:define name="header_content"><ui:include src="layout/headerContent.xhtml"/></ui:define>
+<ui:define name="main_body">
+<h:form>
+	<p:gmap center="50.8393878, 4.3979159" zoom="15" type="hybrid" style="width:100%;height:400px" model="#{contactBean.mapModel}" />
+</h:form>
+<h:panelGrid cellspacing="10" columns="2" style="width:100%;" rowClasses="align-center">
+	<h:panelGrid rowClasses="align-left" style="padding-left:50px;">
+		<h:outputText value="Avenue de Tervueren 5, 1040 Etterbeek, Bruxelles" />
+		<h:outputText value="(Cinquantenaire)" />
+		<h:outputText value="Tél: 02 736 32 10" />
+		<h:outputText value="E-mail: info@fontainedejade.be" />
+	</h:panelGrid>
+	<h:panelGrid rowClasses="align-left">
+		<h:outputText value="Ouvert tous les jours" />
+		<h:outputText value="12h00 à 14h30 &amp; de 18h30 à 22h30" />
+		<h:outputText value="Fermé le mardi soir et le samedi midi" />
+	</h:panelGrid>
+</h:panelGrid>
+</ui:define>		
+</ui:composition>
+</div>

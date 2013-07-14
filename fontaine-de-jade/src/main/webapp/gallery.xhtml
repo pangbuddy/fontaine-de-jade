@@ -1,0 +1,25 @@
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:ui="http://java.sun.com/jsf/facelets"
+	 xmlns:h="http://java.sun.com/jsf/html"
+     xmlns:f="http://java.sun.com/jsf/core"
+     xmlns:p="http://primefaces.org/ui">
+<ui:composition template="template/classic.xhtml">
+<ui:param name="contentBodyStyleClass" value="content-body-bg-color" />
+<ui:define name="title">#{msg['page.callery']}</ui:define>
+<ui:define name="header_content"><ui:include src="layout/headerContent.xhtml"/></ui:define>
+<ui:define name="main_body">
+
+<p:galleria effect="fade" autoPlay="false" panelWidth="900" panelHeight="450" showCaption="false" showFilmstrip="true" style="border-style: none;">
+	<p:graphicImage value="#{resource['image:gallery/1.jpg']}" />
+	<p:graphicImage value="#{resource['image:gallery/2.jpg']}" />
+	<p:graphicImage value="#{resource['image:gallery/3.jpg']}" />
+	<p:graphicImage value="#{resource['image:gallery/4.jpg']}" />
+	<p:graphicImage value="#{resource['image:gallery/5.jpg']}" />
+	<p:graphicImage value="#{resource['image:gallery/6.jpg']}" />
+	<p:graphicImage value="#{resource['image:gallery/9.jpg']}" />
+	<p:graphicImage value="#{resource['image:gallery/7.jpg']}" />
+</p:galleria>
+
+</ui:define>		
+</ui:composition>
+</div>

@@ -1,0 +1,21 @@
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:ui="http://java.sun.com/jsf/facelets"
+	 xmlns:h="http://java.sun.com/jsf/html"
+     xmlns:f="http://java.sun.com/jsf/core"
+     xmlns:p="http://primefaces.org/ui">
+<ui:composition template="template/classic.xhtml">
+<ui:param name="contentBodyStyleClass" value="content-body-bg-color" />
+<ui:define name="title">#{msg['page.video']}</ui:define>
+<ui:define name="header_content"><ui:include src="layout/headerContent.xhtml"/></ui:define>
+<ui:define name="main_body">
+
+<div id="main-content-body">
+<iframe width="860" height="480" src="http://www.youtube.com/embed/BeqlLANhn5w" frameborder="0" ></iframe>
+<iframe width="860" height="480" src="http://www.youtube.com/embed/3GPlDuIAdLE" frameborder="0" ></iframe>
+<iframe width="860" height="480" src="http://www.youtube.com/embed/sG9g-HdlF4A" frameborder="0" ></iframe>
+<iframe width="860" height="480" src="http://www.youtube.com/embed/7CQOIdWi0k4" frameborder="0" ></iframe>
+</div>
+
+</ui:define>		
+</ui:composition>
+</div>
