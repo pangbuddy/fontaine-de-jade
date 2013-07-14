@@ -1,0 +1,92 @@
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:ui="http://java.sun.com/jsf/facelets"
+	 xmlns:h="http://java.sun.com/jsf/html"
+     xmlns:f="http://java.sun.com/jsf/core"
+     xmlns:p="http://primefaces.org/ui">
+<ui:composition template="template/classic.xhtml">
+<ui:param name="contentBodyStyleClass" value="content-body-bg-color" />
+<ui:define name="title">#{msg['page.seasonMenu']}</ui:define>
+<ui:define name="header_content"><ui:include src="layout/headerContent.xhtml"/></ui:define>
+<ui:define name="main_body">
+
+<div id="main-content-body">
+	<p:fieldset legend="MENU DE SAISON">
+
+	</p:fieldset>
+	<p:fieldset legend="MENU DE GOURMET - 28,00 € par pers.">
+
+
+Potage pékinois vinaigre et poivre
+Ou
+Crème d'asperges et de crabe
+
+--------------------------
+
+Roulades de scampi croquantes et Salade
+
+-------------------------
+
+PLATS AU CHOIX
+
+38. Queues de scampi aux cinq épices  
+44. Filet de saumon à la vapeur et au vin de riz  
+57. Poulet croquant sauce Sichuan
+61. Canard à ' orange
+86. Trio sauté pimenté
+--------------------------
+
+Assiette de fontaine de jade 
+
+Toute modification peut entrainer un supplément
+	</p:fieldset> 
+	<p:fieldset legend="MENU LA FONTAINE DE JADE - 38,00 € par pers. (Min 2 pers.)">
+
+
+Dim Sun assortis cuits à la vapeur (4 sortes)
+
+--------------------------
+
+Trois délices aux scampis
+
+-------------------------
+
+Coquilles Saint-Jacques sautées aux pignons de pin
+
+--------------------------
+
+Languettes de bœuf sautées aux asperges et Shiitaké
+Et
+Sole en grappe de raisin à la sauce aigre-douce
+
+--------------------------
+
+Assiette de fruits frais et gourmandises
+	</p:fieldset>
+	<p:fieldset legend="MENU DE DÉGUSTATION - 49,00 € par pers. (Min 2 pers)">
+
+
+
+Dim Sun assortis cuits à la vapeur (4 sortes)
+
+-----------------------
+
+Chaude et froide Saint-Jacques. Scampi et saumon
+
+------------------------
+
+Homard parfumé à la coriandre
+
+------------------------
+
+ 1 Plats au choix à la carte（par pers.）
+
+-----------------------
+
+Assiette de fruits frais et gourmandises
+	</p:fieldset>
+
+</div>
+
+</ui:define>		
+</ui:composition>
+</div>

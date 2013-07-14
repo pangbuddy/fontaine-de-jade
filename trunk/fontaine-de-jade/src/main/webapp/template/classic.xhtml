@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<f:view xmlns="http://www.w3.org/1999/xhtml" locale="#{languageBean.locale}" contentType="text/html">
+<h:head>
+	<title>
+		La Fontaine de Jade - <ui:insert name="title" />
+	</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="icon" type="image/gif" href="#{resource['image:favicon.ico']}" />
+	<link rel="stylesheet" type="text/css" href="#{resource['css:classic.css']}" />
+	<link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'/>
+	<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'/>
+	<ui:insert name="custom-script" />
+</h:head>
+<h:body>
+<div id="content-container">
+	<div id="header">
+    	<ui:insert name="header_content" />
+    </div><!-- header end-->
+	<div id="content-body" class="#{contentBodyStyleClass}">
+    	<div id="main-content" class="#{mainContentStyleClass}">
+
+			<ui:insert name="main_body">Please define a content</ui:insert>
+
+        </div><!-- main-content end-->
+    </div><!-- content-body end-->
+    <div id="footer">
+        <div id="language-selector">
+        <h:form>
+            <ul>
+                <li><h:commandLink action="#{languageBean.setLanguage('fr')}" value="Français" /></li>
+            <li class="division"></li>
+                <li><h:commandLink action="#{languageBean.setLanguage('en')}" value="English" /></li>
+            <li class="division"></li>
+                <li><h:commandLink action="#{languageBean.setLanguage('cn')}" value="中文" /></li>
+            </ul>
+        </h:form>
+        </div><!-- language-selector end-->
+        <div id="copyright">Copyright© 2013 La Fontaine de Jade Bruxelles</div><!-- copyright end -->
+    </div><!-- footer end-->
+</div><!-- content-container end-->
+<p:ajaxStatus style="width:16px;height:16px;position:fixed;left:5px;bottom:5px"> 
+	<f:facet name="start">
+    	<h:graphicImage value="#{resource['image:loading.gif']}" alt="loading" />
+    </f:facet>
+    <f:facet name="complete">  
+        <h:outputText value="" />  
+    </f:facet>
+</p:ajaxStatus>	
+</h:body>
+</f:view>
+</html>

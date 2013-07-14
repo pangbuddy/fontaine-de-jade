@@ -1,0 +1,537 @@
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:ui="http://java.sun.com/jsf/facelets"
+	 xmlns:h="http://java.sun.com/jsf/html"
+     xmlns:f="http://java.sun.com/jsf/core"
+     xmlns:p="http://primefaces.org/ui">
+<ui:composition template="template/classic.xhtml">
+<ui:param name="contentBodyStyleClass" value="content-body-bg-color" />
+<ui:define name="title">#{msg['page.menu']}</ui:define>
+<ui:define name="header_content"><ui:include src="layout/headerContent.xhtml"/></ui:define>
+<ui:define name="main_body">
+
+<div id="main-content-body">
+<h:panelGrid rowClasses="align-top" columns="2">
+	<h:panelGrid rowClasses="align-center" style="margin-top:50px;width:250px;">
+		<h:panelGroup style="display:block;margin-bottom:70px;">
+			<h:graphicImage value="#{resource['image:menu/011.jpg']}" width="200" height="150" onclick="wt_011.show();"/>  
+			<p:dialog widgetVar="wt_011" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
+		        <p:graphicImage value="#{resource['image:menu/011.jpg']}" onclick="wt_011.hide();" />
+		    </p:dialog>
+		</h:panelGroup>
+		<h:panelGroup style="display:block;margin-bottom:70px;">
+			<h:graphicImage value="#{resource['image:menu/004.jpg']}" width="200" height="150" onclick="wt_004.show();"/>  
+			<p:dialog widgetVar="wt_004" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
+		        <p:graphicImage value="#{resource['image:menu/004.jpg']}" onclick="wt_004.hide();" />
+		    </p:dialog>
+		</h:panelGroup>
+		<h:panelGroup style="display:block;margin-bottom:70px;">
+			<h:graphicImage value="#{resource['image:menu/010.jpg']}" width="200" height="150" onclick="wt_010.show();"/>  
+			<p:dialog widgetVar="wt_010" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
+		        <p:graphicImage value="#{resource['image:menu/010.jpg']}" onclick="wt_010.hide();" />
+		    </p:dialog>
+		</h:panelGroup>
+		<h:panelGroup style="display:block;margin-bottom:70px;">
+			<h:graphicImage value="#{resource['image:menu/017.jpg']}" width="200" height="150" onclick="wt_017.show();"/>  
+			<p:dialog widgetVar="wt_017" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
+		        <p:graphicImage value="#{resource['image:menu/017.jpg']}" onclick="wt_017.hide();" />
+		    </p:dialog>
+		</h:panelGroup>
+		<h:panelGroup style="display:block;margin-bottom:70px;">
+			<h:graphicImage value="#{resource['image:menu/013.jpg']}" width="200" height="150" onclick="wt_013.show();"/>  
+			<p:dialog widgetVar="wt_013" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
+		        <p:graphicImage value="#{resource['image:menu/013.jpg']}" onclick="wt_013.hide();" />
+		    </p:dialog>
+		</h:panelGroup>
+		<h:panelGroup style="display:block;margin-bottom:70px;">
+			<h:graphicImage value="#{resource['image:menu/002.jpg']}" width="200" height="150" onclick="wt_002.show();"/>  
+			<p:dialog widgetVar="wt_002" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
+		        <p:graphicImage value="#{resource['image:menu/002.jpg']}" onclick="wt_002.hide();" />
+		    </p:dialog>
+		</h:panelGroup>
+		<h:panelGroup style="display:block;margin-bottom:70px;">
+			<h:graphicImage value="#{resource['image:menu/009.jpg']}" width="200" height="150" onclick="wt_009.show();"/>  
+			<p:dialog widgetVar="wt_009" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
+		        <p:graphicImage value="#{resource['image:menu/009.jpg']}" onclick="wt_009.hide();" />
+		    </p:dialog>
+		</h:panelGroup>
+		<h:panelGroup style="display:block;margin-bottom:70px;">
+			<h:graphicImage value="#{resource['image:menu/008.jpg']}" width="200" height="150" onclick="wt_008.show();"/>  
+			<p:dialog widgetVar="wt_008" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
+		        <p:graphicImage value="#{resource['image:menu/008.jpg']}" onclick="wt_008.hide();" />
+		    </p:dialog>
+		</h:panelGroup>
+		<h:panelGroup style="display:block;margin-bottom:70px;">
+			<h:graphicImage value="#{resource['image:menu/012.jpg']}" width="200" height="150" onclick="wt_012.show();"/>  
+			<p:dialog widgetVar="wt_012" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
+		        <p:graphicImage value="#{resource['image:menu/012.jpg']}" onclick="wt_012.hide();" />
+		    </p:dialog>
+		</h:panelGroup>
+		<h:panelGroup style="display:block;margin-bottom:70px;">
+			<h:graphicImage value="#{resource['image:menu/016.jpg']}" width="200" height="150" onclick="wt_016.show();"/>  
+			<p:dialog widgetVar="wt_016" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
+		        <p:graphicImage value="#{resource['image:menu/016.jpg']}" onclick="wt_016.hide();" />
+		    </p:dialog>
+		</h:panelGroup>
+		<h:panelGroup style="display:block;margin-bottom:70px;">
+			<h:graphicImage value="#{resource['image:menu/003.jpg']}" width="200" height="150" onclick="wt_003.show();"/>  
+			<p:dialog widgetVar="wt_003" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
+		        <p:graphicImage value="#{resource['image:menu/003.jpg']}" onclick="wt_003.hide();" />
+		    </p:dialog>
+		</h:panelGroup>
+	</h:panelGrid>
+	<h:panelGrid cellspacing="10" style="width:600px;">
+	<p:fieldset legend="POTAGES">  
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="4." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.4']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="4,50" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="5." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.5']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="6,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="6." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.6']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="5,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	</p:fieldset>
+	
+	<p:fieldset legend="ENTRÉES CHAUDES">  
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="10." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.10']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="10,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="11." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.11']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="6,50" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="14." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.14']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="11,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="15." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.15']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="14,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="16." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.16']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="15,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="17." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.17']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="16,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="18." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.18']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="11,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="19." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.19']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="12,50" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="20." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.20']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="11,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="21." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.21']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="14,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="23." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.23']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="19,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	</p:fieldset>
+	
+	<p:fieldset legend="ENTRÉES FROIDES">  
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="27." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.27']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="10,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="29." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.29']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="10,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="30." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.30']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="12,50" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	</p:fieldset>
+	
+	<p:fieldset legend="POISSONS ET CRUSTACÉS">  
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="32." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.32']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="18,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="33." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.33']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="21,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="35." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.35']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="18,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="36." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.36']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="19,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="37." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.37']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="19,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="38." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.38']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="19,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="39." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.39']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="19,50" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="42." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.42']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="15,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="43." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.43']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="18,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="44." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.44']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="19,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="45." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.45']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="21,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="46." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.46']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="21,50" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="47." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.47']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="37,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	</p:fieldset>
+	
+	<p:fieldset legend="VOLAILLES">  
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="52." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.52']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="12,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="53." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.53']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="12,50" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="54." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.54']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="15,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="55." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.55']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="13,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="57." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.57']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="13,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="58." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.58']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="17,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="60." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.60']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="17,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="61." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.61']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="16,50" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="62." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.62']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="17,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="64." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.64']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="16,50" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="66." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.66']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="16,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	</p:fieldset>
+	
+	<p:fieldset legend="VIANDES">  
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="71." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.71']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="12,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="72." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.72']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="12,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="81." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.81']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="14,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="82." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.82']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="14,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="83." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.83']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="14,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="84." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.84']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="14,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="86." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.86']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="16,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="87." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.87']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="15,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="88." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.88']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="15,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="89." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.89']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="16,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="90." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.90']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="15,50" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    
+	</p:fieldset>
+	
+	<p:fieldset legend="LÉGUMES RIZ ET PÂTES">  
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="91." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.91']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="11,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="92." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.92']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="14,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="93." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.93']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="12,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="94." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.94']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="14,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="95." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.95']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="12,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="96." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.96']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="14,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="97." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.97']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="12,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="98." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.98']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="12,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	    <h:panelGrid columns="2" styleClass="menu-list">
+	    	<h:panelGrid columns="2" rowClasses="align-bottom" >
+		    	<h:outputText value="99." styleClass="menu-list-number"/>
+		    	<h:outputText value="#{msg['menu.99']}" styleClass="menu-list-text"/>
+	    	</h:panelGrid>
+	    	<h:outputText value="11,00" styleClass="menu-list-price"/>
+	    </h:panelGrid>
+	</p:fieldset>
+	</h:panelGrid>
+</h:panelGrid>
+</div>
+
+</ui:define>		
+</ui:composition>
+</div>
