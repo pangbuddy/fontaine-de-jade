@@ -10,80 +10,113 @@
 <ui:define name="main_body">
 
 <div id="main-content-body">
-	<p:fieldset legend="MENU DE SAISON">
+<h:panelGrid rowClasses="align-top" columns="2">
+	<h:panelGrid rowClasses="align-center" style="margin-top:50px;width:250px;">
+		<h:panelGroup style="display:block;margin-bottom:70px;">
+			<h:graphicImage value="#{resource['image:menu/019.jpg']}" width="200" height="150" onclick="wt_019.show();"/>  
+			<p:dialog widgetVar="wt_019" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
+		        <p:graphicImage value="#{resource['image:menu/019.jpg']}" onclick="wt_019.hide();" />
+		    </p:dialog>
+		</h:panelGroup>
+		<h:panelGroup style="display:block;margin-bottom:70px;">
+			<h:graphicImage value="#{resource['image:menu/015.jpg']}" width="200" height="150" onclick="wt_015.show();"/>  
+			<p:dialog widgetVar="wt_015" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
+		        <p:graphicImage value="#{resource['image:menu/015.jpg']}" onclick="wt_015.hide();" />
+		    </p:dialog>
+		</h:panelGroup>
+		<h:panelGroup style="display:block;margin-bottom:70px;">
+			<h:graphicImage value="#{resource['image:menu/020.jpg']}" width="200" height="150" onclick="wt_020.show();"/>  
+			<p:dialog widgetVar="wt_020" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
+		        <p:graphicImage value="#{resource['image:menu/020.jpg']}" onclick="wt_020.hide();" />
+		    </p:dialog>
+		</h:panelGroup>
+		<h:panelGroup style="display:block;margin-bottom:70px;">
+			<h:graphicImage value="#{resource['image:menu/021.jpg']}" width="200" height="150" onclick="wt_021.show();"/>  
+			<p:dialog widgetVar="wt_021" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
+		        <p:graphicImage value="#{resource['image:menu/021.jpg']}" onclick="wt_021.hide();" />
+		    </p:dialog>
+		</h:panelGroup>
+		<h:panelGroup style="display:block;margin-bottom:70px;">
+			<h:graphicImage value="#{resource['image:menu/014.jpg']}" width="200" height="150" onclick="wt_014.show();"/>  
+			<p:dialog widgetVar="wt_014" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
+		        <p:graphicImage value="#{resource['image:menu/014.jpg']}" onclick="wt_014.hide();" />
+		    </p:dialog>
+		</h:panelGroup>
+		<h:panelGroup style="display:block;margin-bottom:70px;">
+			<h:graphicImage value="#{resource['image:menu/022.jpg']}" width="200" height="150" onclick="wt_022.show();"/>  
+			<p:dialog widgetVar="wt_022" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
+		        <p:graphicImage value="#{resource['image:menu/022.jpg']}" onclick="wt_022.hide();" />
+		    </p:dialog>
+		</h:panelGroup>
+		<h:panelGroup style="display:block;margin-bottom:70px;">
+			<h:graphicImage value="#{resource['image:menu/023.jpg']}" width="200" height="150" onclick="wt_023.show();"/>  
+			<p:dialog widgetVar="wt_023" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
+		        <p:graphicImage value="#{resource['image:menu/023.jpg']}" onclick="wt_023.hide();" />
+		    </p:dialog>
+		</h:panelGroup>
+	</h:panelGrid>
+	<h:panelGrid cellspacing="10" style="width:580px;">
+	
+		<p:fieldset legend="MENU DE SAISON - 22,00 € par pers.">
+			<h:panelGrid styleClass="combo-text">
+				<h:outputText value="#{msg['menu.21']}"/>
+			<p:separator style="margin:10px;"/>
+				<h:outputText value="Poulet sauce aigre-douce aux Fruits frais"/>
+				<h:outputText value="ou"/>
+				<h:outputText value="#{msg['menu.81']}"/>
+			<p:separator style="margin:10px;"/>
+				<h:outputText value="Glace ou Sorber"/>
+			</h:panelGrid>
+		</p:fieldset>
+		<p:fieldset legend="MENU DE GOURMET - 28,00 € par pers.">
+			<h:panelGrid styleClass="combo-text">
+				<h:outputText value="#{msg['menu.4']}"/>
+				<h:outputText value="ou"/>
+				<h:outputText value="#{msg['menu.6']}"/>
+			<p:separator style="margin:10px;"/>
+				<h:outputText value="#{msg['menu.19']}"/>
+			<p:separator style="margin:10px;"/>	
+				<h:outputText value="- PLATS AU CHOIX -"/>
+				<h:outputText value="#{msg['menu.38']}"/>
+				<h:outputText value="#{msg['menu.44']}"/>
+				<h:outputText value="#{msg['menu.57']}"/>
+				<h:outputText value="#{msg['menu.61']}"/>
+				<h:outputText value="#{msg['menu.86']}"/>
+			<p:separator style="margin:10px;"/>
+				<h:outputText value="Assiette de fontaine de jade"/>
+			</h:panelGrid>
+		</p:fieldset> 
+		<p:fieldset legend="MENU LA FONTAINE DE JADE - 38,00 € par pers. (Min 2 pers.)">
+			<h:panelGrid styleClass="combo-text">
+				<h:outputText value="Dim Sun assortis cuits à la vapeur (4 sortes)"/>
+			<p:separator style="margin:10px;"/>
+				<h:outputText value="Trois délices aux scampis"/>
+			<p:separator style="margin:10px;"/>
+				<h:outputText value="Coquilles Saint-Jacques sautées aux pignons de pin"/>
+			<p:separator style="margin:10px;"/>	
+				<h:outputText value="Languettes de bœuf sautées aux asperges et Shiitaké"/>
+				<h:outputText value="Et"/>
+				<h:outputText value="Sole en grappe de raisin à la sauce aigre-douce"/>
+			<p:separator style="margin:10px;"/>
+				<h:outputText value="Assiette de fruits frais et gourmandises"/>
+			</h:panelGrid>
+		</p:fieldset>
+		<p:fieldset legend="MENU DE DÉGUSTATION - 49,00 € par pers. (Min 2 pers)">
+			<h:panelGrid styleClass="combo-text">
+				<h:outputText value="Dim Sun assortis cuits à la vapeur (4 sortes)"/>
+			<p:separator style="margin:10px;"/>
+				<h:outputText value="Chaude et froide Saint-Jacques. Scampi et saumon"/>
+			<p:separator style="margin:10px;"/>
+				<h:outputText value="Homard parfumé à la coriandre"/>
+			<p:separator style="margin:10px;"/>	
+				<h:outputText value="Une plats au choix à la carte（par pers.）"/>
+			<p:separator style="margin:10px;"/>
+				<h:outputText value="Assiette de fruits frais et gourmandises"/>
+			</h:panelGrid>
+		</p:fieldset>
+	</h:panelGrid>
 
-	</p:fieldset>
-	<p:fieldset legend="MENU DE GOURMET - 28,00 € par pers.">
-
-
-Potage pékinois vinaigre et poivre
-Ou
-Crème d'asperges et de crabe
-
---------------------------
-
-Roulades de scampi croquantes et Salade
-
--------------------------
-
-PLATS AU CHOIX
-
-38. Queues de scampi aux cinq épices  
-44. Filet de saumon à la vapeur et au vin de riz  
-57. Poulet croquant sauce Sichuan
-61. Canard à ' orange
-86. Trio sauté pimenté
---------------------------
-
-Assiette de fontaine de jade 
-
-Toute modification peut entrainer un supplément
-	</p:fieldset> 
-	<p:fieldset legend="MENU LA FONTAINE DE JADE - 38,00 € par pers. (Min 2 pers.)">
-
-
-Dim Sun assortis cuits à la vapeur (4 sortes)
-
---------------------------
-
-Trois délices aux scampis
-
--------------------------
-
-Coquilles Saint-Jacques sautées aux pignons de pin
-
---------------------------
-
-Languettes de bœuf sautées aux asperges et Shiitaké
-Et
-Sole en grappe de raisin à la sauce aigre-douce
-
---------------------------
-
-Assiette de fruits frais et gourmandises
-	</p:fieldset>
-	<p:fieldset legend="MENU DE DÉGUSTATION - 49,00 € par pers. (Min 2 pers)">
-
-
-
-Dim Sun assortis cuits à la vapeur (4 sortes)
-
------------------------
-
-Chaude et froide Saint-Jacques. Scampi et saumon
-
-------------------------
-
-Homard parfumé à la coriandre
-
-------------------------
-
- 1 Plats au choix à la carte（par pers.）
-
------------------------
-
-Assiette de fruits frais et gourmandises
-	</p:fieldset>
+</h:panelGrid>
 
 </div>
 
