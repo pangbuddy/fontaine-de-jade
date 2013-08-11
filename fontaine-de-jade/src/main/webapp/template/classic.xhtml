@@ -35,9 +35,9 @@
             <ul>
                 <li><h:commandLink action="#{languageBean.setLanguage('fr')}" value="Français" /></li>
             <li class="division"></li>
-                <li><h:commandLink action="#{languageBean.setLanguage('en')}" value="English" /></li>
+                <li><h:commandLink onclick="alert('Sorry, The English version is not yet available!');return false;" action="#{languageBean.setLanguage('en')}" value="English" /></li>
             <li class="division"></li>
-                <li><h:commandLink action="#{languageBean.setLanguage('cn')}" value="中文" /></li>
+                <li><h:commandLink onclick="alert('抱歉， 中文内容尚不可用!');return false;" action="#{languageBean.setLanguage('cn')}" value="中文" /></li>
             </ul>
         </h:form>
         </div><!-- language-selector end-->

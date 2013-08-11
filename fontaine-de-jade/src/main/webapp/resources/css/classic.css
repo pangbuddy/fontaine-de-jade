@@ -155,7 +155,12 @@ html, body{
 .align-center{
 	text-align: center;
 }
-
+.combo-text {
+	width:100%;
+	padding: 50px;
+	font-family: 'Playball', cursive;
+	font-size: 18px;
+}
 .menu-list {
 	width:100%;
 	margin-top:5px;
