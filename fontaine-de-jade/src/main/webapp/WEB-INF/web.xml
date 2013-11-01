@@ -16,7 +16,10 @@
 <listener>
     <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class> 
 </listener-->
-
+	<mime-mapping>
+	    <extension>ico</extension>
+	    <mime-type>image/x-icon</mime-type>
+	</mime-mapping>
   <mime-mapping>
     <extension>ecss</extension>
     <mime-type>text/css</mime-type>
