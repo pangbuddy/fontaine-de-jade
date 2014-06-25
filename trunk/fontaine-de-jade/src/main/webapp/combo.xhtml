@@ -13,45 +13,45 @@
 <h:panelGrid rowClasses="align-top" columns="2">
 	<h:panelGrid rowClasses="align-center" style="margin-top:50px;width:250px;">
 		<h:panelGroup style="display:block;margin-bottom:70px;">
-			<h:graphicImage value="#{resource['image:menu/019.jpg']}" width="200" height="150" onclick="wt_019.show();"/>  
+			<h:graphicImage value="#{resource['image:menu/019.jpg']}" width="200" height="150" onclick="PF('wt_019').show();"/>  
 			<p:dialog widgetVar="wt_019" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
-		        <p:graphicImage value="#{resource['image:menu/019.jpg']}" onclick="wt_019.hide();" />
+		        <p:graphicImage value="#{resource['image:menu/019.jpg']}" onclick="PF('wt_019').hide();" />
 		    </p:dialog>
 		</h:panelGroup>
 		<h:panelGroup style="display:block;margin-bottom:70px;">
-			<h:graphicImage value="#{resource['image:menu/015.jpg']}" width="200" height="150" onclick="wt_015.show();"/>  
+			<h:graphicImage value="#{resource['image:menu/015.jpg']}" width="200" height="150" onclick="PF('wt_015').show();"/>  
 			<p:dialog widgetVar="wt_015" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
-		        <p:graphicImage value="#{resource['image:menu/015.jpg']}" onclick="wt_015.hide();" />
+		        <p:graphicImage value="#{resource['image:menu/015.jpg']}" onclick="PF('wt_015').hide();" />
 		    </p:dialog>
 		</h:panelGroup>
 		<h:panelGroup style="display:block;margin-bottom:70px;">
-			<h:graphicImage value="#{resource['image:menu/020.jpg']}" width="200" height="150" onclick="wt_020.show();"/>  
+			<h:graphicImage value="#{resource['image:menu/020.jpg']}" width="200" height="150" onclick="PF('wt_020').show();"/>  
 			<p:dialog widgetVar="wt_020" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
-		        <p:graphicImage value="#{resource['image:menu/020.jpg']}" onclick="wt_020.hide();" />
+		        <p:graphicImage value="#{resource['image:menu/020.jpg']}" onclick="PF('wt_020').hide();" />
 		    </p:dialog>
 		</h:panelGroup>
 		<h:panelGroup style="display:block;margin-bottom:70px;">
-			<h:graphicImage value="#{resource['image:menu/021.jpg']}" width="200" height="150" onclick="wt_021.show();"/>  
+			<h:graphicImage value="#{resource['image:menu/021.jpg']}" width="200" height="150" onclick="PF('wt_021').show();"/>  
 			<p:dialog widgetVar="wt_021" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
-		        <p:graphicImage value="#{resource['image:menu/021.jpg']}" onclick="wt_021.hide();" />
+		        <p:graphicImage value="#{resource['image:menu/021.jpg']}" onclick="PF('wt_021').hide();" />
 		    </p:dialog>
 		</h:panelGroup>
 		<h:panelGroup style="display:block;margin-bottom:70px;">
-			<h:graphicImage value="#{resource['image:menu/014.jpg']}" width="200" height="150" onclick="wt_014.show();"/>  
+			<h:graphicImage value="#{resource['image:menu/014.jpg']}" width="200" height="150" onclick="PF('wt_014').show();"/>  
 			<p:dialog widgetVar="wt_014" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
-		        <p:graphicImage value="#{resource['image:menu/014.jpg']}" onclick="wt_014.hide();" />
+		        <p:graphicImage value="#{resource['image:menu/014.jpg']}" onclick="PF('wt_014').hide();" />
 		    </p:dialog>
 		</h:panelGroup>
 		<h:panelGroup style="display:block;margin-bottom:70px;">
-			<h:graphicImage value="#{resource['image:menu/022.jpg']}" width="200" height="150" onclick="wt_022.show();"/>  
+			<h:graphicImage value="#{resource['image:menu/022.jpg']}" width="200" height="150" onclick="PF('wt_022').show();"/>  
 			<p:dialog widgetVar="wt_022" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
-		        <p:graphicImage value="#{resource['image:menu/022.jpg']}" onclick="wt_022.hide();" />
+		        <p:graphicImage value="#{resource['image:menu/022.jpg']}" onclick="PF('wt_022').hide();" />
 		    </p:dialog>
 		</h:panelGroup>
 		<h:panelGroup style="display:block;margin-bottom:70px;">
-			<h:graphicImage value="#{resource['image:menu/023.jpg']}" width="200" height="150" onclick="wt_023.show();"/>  
+			<h:graphicImage value="#{resource['image:menu/023.jpg']}" width="200" height="150" onclick="PF('wt_023').show();"/>  
 			<p:dialog widgetVar="wt_023" resizable="false" closable="false" showEffect="puff" hideEffect="puff">
-		        <p:graphicImage value="#{resource['image:menu/023.jpg']}" onclick="wt_023.hide();" />
+		        <p:graphicImage value="#{resource['image:menu/023.jpg']}" onclick="PF('wt_023').hide();" />
 		    </p:dialog>
 		</h:panelGroup>
 	</h:panelGrid>
@@ -59,13 +59,13 @@
 	
 		<p:fieldset legend="MENU DE SAISON - 22,00 € par pers.">
 			<h:panelGrid styleClass="combo-text">
-				<h:outputText value="Raviolis de crevettes frits avec salade"/>
+				<h:outputText value="Croquettes de soja au poulet avec salade"/>
 			<p:separator style="margin:10px;"/>
-				<h:outputText value="Poulet croquant sauce vinaigrette"/>
+				<h:outputText value="Languettes de bœuf sautées a la citronnelle"/>
 				<h:outputText value="ou"/>
-				<h:outputText value="Languettes de bœuf sautées aux haricots noirs"/>
+				<h:outputText value="Dés de porc frits sauce aigre-douce et fruits frais"/>
 			<p:separator style="margin:10px;"/>
-				<h:outputText value="Glace aux lychees"/>
+				<h:outputText value="Glace sorbet"/>
 			</h:panelGrid>
 		</p:fieldset>
 		<p:fieldset legend="MENU DE GOURMET - 28,00 € par pers.">

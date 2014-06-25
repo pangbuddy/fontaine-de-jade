@@ -1,0 +1,21 @@
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:ui="http://java.sun.com/jsf/facelets"
+	 xmlns:h="http://java.sun.com/jsf/html"
+     xmlns:f="http://java.sun.com/jsf/core"
+     xmlns:p="http://primefaces.org/ui">
+<h:form>
+<p:notificationBar position="top" effect="slide" styleClass="top" widgetVar="bar" autoDisplay="true">
+	<h:panelGrid rowClasses="align-center align-center" style="width:100%;" columns="2">
+	    <h:outputText value="Vacances d’été" style="font-size:24px;" />
+	    <h:outputText value="Summer vacation" style="font-size:24px;" />
+	    
+	    <h:outputText value="Fermeture du 7 Juillet au 14 Juillet 2014," style="font-size:18px;" />
+	    <h:outputText value="Closed from 7th July till 14th July 2014," style="font-size:18px;" />
+	    
+	    <h:outputText value="Réouverture le mardi 15 Juillet" style="font-size:18px;" />
+	    <h:outputText value="Reopening on the Tuesday 15th July" style="font-size:18px;" />
+    </h:panelGrid>
+    <p:commandButton value="Hide" onclick="PF('bar').hide()" type="button" icon="ui-icon-arrow-1-n" style="float:right;"/>
+</p:notificationBar>
+</h:form>
+</div>
